@@ -1,0 +1,754 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Fasthand&family=Indie+Flower&family=Montserrat:wght@100&family=Oswald:wght@200&family=Satisfy&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar */
+
+body {
+  width: 100vw;
+  overflow-x: hidden;
+}
+.navbar {
+  width: 100vw;
+  box-shadow: 0px 2px 11px -1px rgba(0, 0, 0, 0.75);
+  background-color: white;
+}
+.navbar .nav_container {
+  display: flex;
+  width: 100%;
+  font-family: "Dosis", sans-serif;
+}
+
+.redbus_logo {
+  padding: 0.5rem 5rem;
+}
+
+.navbar .middle_nav {
+  display: flex;
+  width: 50%;
+  padding: 0.5rem 2rem;
+}
+
+.middle_img_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90px;
+  /* border: 1px solid black; */
+  border-radius: 5px;
+  margin: 0 0.5rem;
+  font-weight: 600;
+}
+
+.right_nav {
+  display: flex;
+  width: 30%;
+  padding: 0.5rem 2rem;
+}
+
+.right_img_container {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  /* border: 1px solid black; */
+  border-radius: 5px;
+  margin: 0 0.5rem;
+}
+
+.right_img_container img {
+  opacity: 0.7;
+}
+.right_img_container p {
+  padding-left: 0.5rem;
+  font-weight: lighter;
+  opacity: 0.9;
+}
+
+/* Main container */
+.section_one {
+  background-image: url("Img/HomeBannerImg.svg");
+  height: 29rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.section_container {
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Heading {
+  font-size: 2.1rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-align: center;
+  padding: 4rem 0 3rem 0;
+}
+
+.fields {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 110px;
+  background-color: white;
+  width: fit-content;
+  margin: auto;
+  border-radius: 1rem;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.fields div {
+  height: inherit;
+  display: flex;
+  align-items: center;
+}
+
+.fields > div input {
+  height: inherit;
+  border: none;
+  outline: none;
+  padding: 0 1rem 0 0;
+  border-right: 1px solid #0000001b;
+  opacity: 0.7;
+}
+
+.fields label {
+  padding-left: 0.5rem;
+}
+
+.date .date_field {
+  padding-left: 0.5rem;
+}
+
+.search .searchBtn {
+  border: none;
+  color: white;
+  background-color: red;
+  padding: 0 1rem;
+  font-size: larger;
+  font-weight: 600;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  cursor: pointer;
+}
+
+/* Main container offers and cards section */
+
+.main {
+  background-color: rgba(251, 243, 243, 0.902);
+  /* height: fit-content; */
+}
+
+.offers {
+  background-color: white;
+  width: 95%;
+  margin: 1rem auto;
+  padding: 1rem;
+  box-shadow: 0px 2px 11px -1px rgba(0, 0, 0, 0.75);
+  border-radius: 1.2rem;
+}
+
+.cards_container {
+  display: flex;
+  overflow-x: scroll;
+}
+
+.card {
+  display: flex;
+  background-color: blue;
+  color: white;
+  min-width: 400px;
+  height: 200px;
+  margin: 1rem 2rem;
+  border-radius: 1rem;
+}
+
+.card:nth-child(2) {
+  background-image: linear-gradient(
+    71.04deg,
+    rgb(39, 57, 101) -6.92%,
+    rgb(80, 210, 149) 109.43%
+  );
+}
+.card:nth-child(3) {
+  background-image: linear-gradient(
+    71.04deg,
+    rgb(72, 0, 4) -6.92%,
+    rgb(216, 78, 85) 109.43%
+  );
+}
+.card:nth-child(4) {
+  background-image: linear-gradient(
+    71.04deg,
+    rgb(206, 119, 0) -6.92%,
+    rgb(255, 194, 111) 109.43%
+  );
+}
+.card:nth-child(5) {
+  background-image: linear-gradient(
+    71.04deg,
+    rgb(24, 125, 151) -6.92%,
+    rgb(109, 213, 237) 109.43%
+  );
+}
+
+.card .offer_img {
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+}
+.card .offer_imgs {
+  border-radius: 50%;
+}
+
+.card .coupon_section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.coupon_icon {
+  display: flex;
+  margin-top: 15px;
+}
+
+.coupon_section h1 {
+  background: #fdfdfda6;
+  border-radius: 10px;
+  width: fit-content;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+}
+
+.coupon_section h3 {
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+
+.coupon_section h4 {
+  background: #fdfdfda6;
+  width: fit-content;
+  padding: 10px;
+  border: dotted;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
+/* Section2 container */
+.section2 {
+  height: 50vh;
+  margin-top: 5rem;
+}
+
+.section2_container {
+  width: 100vw;
+  display: flex;
+  padding: 10px;
+}
+
+.section2_container .left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section2_container .right {
+  width: 50%;
+}
+
+.cab_rent_container {
+  display: flex;
+  border-bottom: 1px solid #0000001f;
+  margin: 15px 0;
+  width: 70%;
+}
+
+.train_bus_container {
+  display: flex;
+  padding: 10px 20px;
+  width: 100%;
+}
+
+.train_bus_container .cab {
+  display: flex;
+  /* border: 1px solid black; */
+  width: 50%;
+  justify-content: space-evenly;
+}
+
+.trending_offer_container h1 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.train_bus_container .train {
+  display: flex;
+  width: 50%;
+  justify-content: space-evenly;
+}
+
+.transportation {
+  list-style-type: none;
+  margin: 2rem 0;
+}
+
+.ticket_heading {
+  font-size: 2rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.fade_text {
+  font-weight: 100;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.transportation li {
+  display: flex;
+  padding: 0.7rem 0;
+}
+.transportation img {
+  max-width: 5vw;
+  padding: 0 10px;
+  /* border: 1px solid black; */
+}
+.transportation p {
+  /* padding-left: 20px; */
+  font-weight: bolder;
+  font-size: larger;
+  /* border: 1px solid black; */
+}
+
+.train h3 {
+  font-weight: 100;
+}
+
+.train img {
+  filter: grayscale(100%);
+}
+
+.cab h3 {
+  color: #eb3232da;
+}
+
+.cab img {
+  filter: hue-rotate(120deg) saturate(120%) brightness(160%);
+}
+
+.arrow_btn {
+  display: flex;
+  align-items: center;
+  background-color: #eb3232da;
+  color: white;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: none;
+  cursor: pointer;
+  font-weight: bolder;
+}
+
+/* Enjoy container */
+/* .Enjoy_App {
+  display: flex;
+} */
+
+.enjoy_container {
+  width: 100%;
+  margin: 2rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.content_container {
+  display: flex;
+}
+
+.items_container {
+  width: 80%;
+  background-color: #eb3232da;
+  border-radius: 2rem;
+  overflow: hidden;
+  padding: 1rem;
+  /* border: 1px solid black; */
+  /* display: flex; */
+}
+
+.items_container h2 {
+  color: white;
+  font-family: monospace;
+  font-size: 2rem;
+  font-weight: 400;
+  margin-left: 1rem;
+}
+
+.enjoy_items {
+  background-color: white;
+  width: 40%;
+  border-radius: 2rem;
+  padding: 1rem;
+  margin: 1rem;
+  display: flex;
+  /* border: 1px solid black; */
+}
+
+.left {
+  /* border: 1px solid black; */
+  width: 100%;
+}
+
+.left ul li {
+  list-style-type: none;
+  /* border: 1px solid black; */
+  display: flex;
+  align-items: center;
+  margin: 3px 0;
+}
+
+.left ul li img {
+  margin-right: 10px;
+}
+
+.rating {
+  display: flex;
+  justify-content: space-evenly;
+  /* border: 1px solid black; */
+  width: 100%;
+  padding: 1rem 0;
+}
+.rating_left {
+  /* border: 1px solid black; */
+}
+.rating h2 {
+  color: black;
+}
+.rating p {
+  padding: 4px 0;
+  opacity: 0.7;
+}
+.rating p b {
+  padding: 4px 0;
+}
+
+.right {
+  width: 60%;
+  display: flex;
+  color: white;
+}
+
+.right p {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+}
+
+.scanner {
+  display: flex;
+  flex-direction: column;
+  margin-left: 3rem;
+}
+
+.playstore {
+  display: flex;
+  flex-direction: column;
+  margin-left: 3rem;
+}
+
+/* primo */
+
+.primo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.primo_container {
+  width: 80%;
+  display: flex;
+  justify-self: center;
+  flex-direction: column;
+  /* border: 1px solid black; */
+}
+
+.top {
+  display: flex;
+  justify-content: center;
+}
+
+.banners_section {
+  display: flex;
+  justify-content: center;
+}
+
+.banners {
+  width: 400px;
+  height: 150px;
+  /* border: 1px solid black; */
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 1.5rem 1rem;
+  /* padding: 0 1rem; */
+  background: linear-gradient(to right, rgb(38, 72, 153), rgb(125, 70, 134));
+  color: white;
+}
+
+.left_img {
+  /* padding: 0 1rem; */
+}
+
+/* Parternrs container */
+
+.partners {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.partners_container {
+  width: 90%;
+  /* border: 1px solid black; */
+  margin: 2rem 0;
+}
+.partners_container h1 {
+  font-size: 3rem;
+  font-weight: 100;
+  font-family: cursive;
+}
+
+.parterns_logo .bus_names {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bus_names p {
+  font-size: larger;
+  font-weight: 200;
+  margin-left: 4.5rem;
+}
+
+.partner_viewall_btn {
+  padding: 10px 20px;
+  margin-right: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 1px solid;
+  background-color: transparent;
+}
+
+.img_container {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 1rem;
+}
+.img {
+  text-align: center;
+}
+
+/* Operations */
+
+.operations {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.operation_container {
+  width: 90%;
+  /* border: 1px solid black; */
+  margin: 1rem;
+}
+
+.heading_with_btn {
+  display: flex;
+  justify-content: space-between;
+}
+
+.heading_with_btn h1 {
+  /* margin-left: 1rem; */
+  font-size: 3rem;
+}
+.operators_names {
+  /* border: 1px solid black; */
+  width: 100%;
+}
+
+.sections {
+  width: 100%;
+  display: flex;
+  margin: 1rem 0;
+}
+
+.sections div {
+  width: 20%;
+}
+
+.operation_viewall_btn {
+  height: 40px;
+  width: 90px;
+  border: 1px solid;
+  background-color: transparent;
+  cursor: pointer;
+  border-radius: 10px;
+  margin-right: 1rem;
+}
+
+/* Global presence */
+.global {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.global_container {
+  width: 90%;
+  /* border: 1px solid black; */
+  margin: 2rem 0;
+}
+
+.global_container h1 {
+  font-size: 2rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.countries {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.country_img {
+  display: flex;
+  flex-direction: column;
+}
+
+/* FAQ section */
+
+.faq {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.faq_container {
+  width: 90%;
+  /* border: 1px solid black; */
+  margin: 2rem 0;
+}
+
+.faq_container h1 {
+  font-size: 2rem;
+  font-weight: 100;
+}
+
+.faq_container nav {
+  width: 80%;
+  margin: 1rem 0;
+}
+
+.faq_container nav ul {
+  display: flex;
+}
+
+.faq_container nav ul li {
+  list-style-type: none;
+  width: 20%;
+  font-size: larger;
+  cursor: pointer;
+}
+
+.faq_container nav ul li:nth-child(1) {
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  color: red;
+}
+.faq_container nav ul li:last-child {
+  text-align: end;
+}
+
+.box {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 0.5rem;
+  border: 1px solid #a3a1a13d;
+  border-radius: 10px;
+  margin: 1rem 0;
+}
+
+/* Footer section */
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #f9f5f0c1;
+}
+.footer_container {
+  width: 80%;
+  display: flex;
+  margin: 1rem 0;
+}
+.footer_redbus_logo {
+  width: 30%;
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer_redbus_logo img {
+  width: 5rem;
+  align-self: flex-start;
+}
+
+.footer_redbus_logo p {
+  padding: 1rem;
+}
+.footer_right_side_content {
+  width: 70%;
+  display: flex;
+}
+.content_box {
+  width: 25%;
+}
+
+.content_box p b {
+  font-size: 1.2rem;
+}
+.content_box p {
+  margin: 10px 0;
+}
+
+/* copyright section */
+.copyright {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #f9f5f0c1;
+}
+
+.copyright_container {
+  width: 90%;
+}
+
+.copyright_items {
+  padding: 2rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.copyright {
+  text-align: left;
+}
+
+.social_media {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.social_logos {
+  margin: 0 1rem;
+}
