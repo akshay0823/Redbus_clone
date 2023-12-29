@@ -625,6 +625,7 @@ body {
 .country_img {
   display: flex;
   flex-direction: column;
+  text-align: center;
 }
 
 /* FAQ section */
